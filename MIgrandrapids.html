@@ -103,8 +103,7 @@
             bulletHide { display: inline !important; max-height:none !important; padding-right: 2px;}
 			highlight { text-align: left !important; display: block !important; font-size: 14px !important; line-height: 20px !important; padding: 2px 50px 4px 50px !important;}
             highlightIntro { text-align: left !important; display: block !important; font-size: 14px !important; line-height: 20px !important; padding: 2px 50px 4px 50px !important;}
-            .hoverClicks {background-color: transparent !important; margin: -1.1em -0.4em !important; padding: 1.5em 1.0em !important; transition: all 0.2s ease-out;}
-            :hover.hoverClicks {background-color: #009cff !important; margin: -1.1em -0.4em !important; padding: 1.5em 1.0em !important; color: #e1e1e3 !important; transition: all 0.2s ease-out;}
+            .hoverClicks {text-decoration: underline !important;}
             .mobile-hed { width:250px!important;  padding: 0 !important; height: auto !important;}
 			.mobile-320 { width:320px!important; padding: 0 !important; }
 			.mobile-300 { width:300px!important;  padding: 0 !important; }
@@ -119,7 +118,7 @@
 			/*MOBILE VISIBILITY*/
 			.mobileOff { width: 0px !important; display: none !important; }
 			.mobileOn { display: block !important; max-height:none !important; font-size:10px !important; }
-            .desktopOff { display:contents !important; }
+            .desktopOff { display:hide !important; }
 			/*ALIGNERS*/
 			.center-align { text-align: center !important; margin: 0 auto !important; }
 			.left-align { text-align: left !important; }
@@ -132,12 +131,12 @@
 			.h3-text-resize { font-size:20px !important; line-height:30px !important; }
 			.intro-text-resize { font-size:14.25px !important; line-height:28px !important; margin-left: 0px !important; margin-right: 0px !important; width: 260px !important; }
             .footer-text-resize { font-size:12.5px !important; line-height:20px !important; }
-            .footerButton {width: 120px !important;}
+            .footerButton {width: 140px !important; border-radius: 60px !important; padding: 5px 20px !important;}
 			.small-text-resize { font-size:11px !important; line-height:14px !important; }
+            .mobileAddress {display: block !important}
             .mobileAddress {display: block !important}
             .mobileRule {display: none !important}
             .clickMob { text-align: center !important; text-transform: none !important; font-size: 12.5px !important; line-height: 20px !important;}
-            :hover.hoverClicks {margin: -1.1em -0.4em !important; padding: 1.1em 0.4em !important; }
 			/*IMAGE RESIZERS*/
 			.imgresize100 img {width:100% !important; height:auto !important;}
 			.imgresize120 img {width:120% !important; height:auto !important;}
@@ -322,11 +321,7 @@
                                     </td>
                                 </tr>
                                 <!-- SPACER --><tr><td height="25" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
-                                 <tr>
-                                    <td align="center" valign="top">
-                                        <p class="intro-text-resize" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; font-weight: 900; font-size: 18px; line-height: 24px; color: #ea2e00; text-wrap: balance;">Mention code 1DAYSALE</p>
-                                    </td>
-                                 </tr>
+
                             </table>
                         </td>
                     </tr>
@@ -391,13 +386,15 @@
                             </table>
                             <!-- END FOOTER LOGO BOX 400 -->   
                             <!-- START FOOTER ADDRESS 400-->
-                            <table class="mobile-320" role="presentation" width="460" cellpadding="0" cellspacing="0" border="0" style="background-color:#43aafa;" bgcolor="#43aafa">
+                            <table class="mobile-280" role="presentation" width="460" cellpadding="0" cellspacing="0" border="0" style="background-color:#43aafa;" bgcolor="#43aafa">
                                     <tr>
-                                    <td width="100%" align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e3e3e; font-size:12px; line-height:16px; font-weight: 400; text-align: center; text-wrap: balance; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility">
-                                        <p style="color:#3e3e3e; display: inline; text-transform: capitalize;"><strong>The Grand Rapids Press. </strong>169 Monroe Ave. NW, Ste 100, Grand Rapids, MI 49503.</p>
+                                    <td width="100%" align="center" class="small-text-resize" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e3e3e; font-size:12px; line-height:16px; font-weight: 400; text-align: center; text-wrap: balance; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility">
+                                        <p style="color:#3e3e3e; display: inline; text-transform: capitalize;" class="small-text-resize"><strong>The Grand Rapids Press. </strong>169 Monroe Ave. NW,<br class="mobileOn desktopOff"> Ste 100, Grand Rapids, MI 49503.</p>
                                     </td>
                                     </tr>
-                                    <td width="100%" align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e3e3e; font-size:12px; line-height:16px; font-weight: 400; text-align: center; text-wrap: balance; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility">
+                                    <!--SPACER--><tr><td height="15" class="mobileOn desktopOff" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
+                                    <tr>
+                                    <td width="100%" align="center" class="small-text-resize" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e3e3e; font-size:12px; line-height:16px; font-weight: 400; text-align: center; text-wrap: balance; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility">
                                         <p style="color:#3e3e3e; display: inline; font-weight: 400;">
                                             To ensure receipt of our emails, please add <a rel="noopener" href="mailto:customercare@mlive.com" target="_blank" class="hovertext"  style="color:#3e3e3e; text-decoration:underline;">customercare@mlive.com</a> to your address book or a safe sender list. You received this email because you have opted in to a newsletter or are a former subscriber to <a rel="noopener" href="https://www.MLive.com/" class="hovertext"  target="_blank" style="color:#3e3e3e; text-decoration:underline;">MLive.com</a> or <a rel="noopener" href="https://reader.gr.mlive.com" class="hovertext"  target="_blank" style="color:#3e3e3e; text-decoration:underline;">The Grand Rapids Press</a>. Click here to<a rel="noopener" href="{optout_confirm_url + '&list_param=' + blast.list}" class="hoverText"  target="_blank" style="color:#3e3e3e; text-decoration:underline;"> Unsubscribe.</a></p>
                                     </td>
@@ -408,11 +405,11 @@
                             <table class="mobile-320" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0" style="background-color:#43aafa;" bgcolor="#43aafa">
                                 <tr>
                                 <td align="center" valign="top">
-                                    <table class="mobile-260" role="presentation" width="300" cellpadding="0" cellspacing="0" border="0">
+                                    <table class="mobile-200" role="presentation" width="300" cellpadding="0" cellspacing="0" border="0">
                                         <tr>
                                         <td align="center" valign="top">
                                             <!--SPACER--><tr><td height="15" class="" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
-                                            <!--SPACER--><tr><td width="100%" height="1px" class="" style="background-color: #3e3e3e"></td></tr>
+                                            <!--SPACER--><tr><td width="100%" height="1px" class="mobRule" style="background-color: #3e3e3e"></td></tr>
                                             <!--SPACER--><tr><td height="15" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                         </td>
                                         </tr>
@@ -426,7 +423,7 @@
                             <tr>
                                 <td width="100%" align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#242424; font-size:12px; line-height:16px; font-weight: 500; text-align: center; text-wrap: balance; text-transform: uppercase; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;" class="small-text-resize">
                                     <p>
-                                    <a rel="noopener" href="https://www.mlive.com/mlive_contacts/page/contact_home.html" target="_blank" class="hoverClicks "style="color:#3e3e3e; text-decoration: none; display: inline;">Contacts</a> | <span class="mobileOff hoverRule"></span><a rel="noopener" href="https://www.mlive.com/privacy-policy/" target="_blank" class="hoverClicks"style="color:#3e3e3e; text-decoration: none; display: inline;">Privacy</a> | <span class="mobileOff hoverRule"></span><a rel="noopener" href="https://myaccount.mlive.com" target="_blank" class="hoverClicks " style="color:#3e3e3e; text-decoration: none;">Account</a> 
+                                    <a rel="noopener" href="https://www.mlive.com/mlive_contacts/page/contact_home.html" target="_blank" class="hoverClicks "style="color:#3e3e3e; text-decoration: none; display: inline;">Contacts</a> | <a rel="noopener" href="https://www.mlive.com/privacy-policy/" target="_blank" class="hoverClicks"style="color:#3e3e3e; text-decoration: none; display: inline;">Privacy</a> | <a rel="noopener" href="https://myaccount.mlive.com" target="_blank" class="hoverClicks " style="color:#3e3e3e; text-decoration: none;">Account</a> 
                                     </p>
                                 </td> 
                             </tr>   
@@ -456,7 +453,7 @@
                                             <td class="stack center-align spacer" align="left" valign="top">                       
                                                     <a rel="noopener" href="https://apps.apple.com/us/app/grand-rapids-press/id491938463" target="_blank"><img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/uq9/g84/1wd/APP_Apple.png" width="150" style="display:block; text-decoration:none; text-align:center; font-size:12px; color:#777777; background:#3F3F3F; mso-line-height-rule:exactly; line-height:22px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;" class="footerButton hoverFooterBttn center-align" alt="Apple App Store button"/></a>
                                             </td>
-                                            <td class="stack" width="10" style="font-size:10px; line-height:1;">&nbsp;</td>
+                                            <td class="mobileOff" width="10" style="font-size:10px; line-height:1;">&nbsp;</td>
                                             <td class="stack center-align spacer" align="right" valign="top">
                                                     <a rel="noopener" href="https://play.google.com/store/apps/details?id=com.advancelocal.grpress" target="_blank"><img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/qp3/u0b/gvp/APP_Google.png" width="150" style="display:block; text-decoration:none; text-align:center; font-size:12px; color:#777777; background:#3F3F3F; mso-line-height-rule:exactly; line-height:22px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;" class="footerButton hoverFooterBttn center-align" alt="Google Play button"/></a>
                                             </td>
